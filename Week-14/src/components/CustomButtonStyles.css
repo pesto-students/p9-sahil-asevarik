@@ -1,0 +1,9 @@
+button{
+    height: 5vh;
+    width:20%;
+    border: none;
+}
+.greybutton{
+    background-color: purple;
+    color: white;
+}
