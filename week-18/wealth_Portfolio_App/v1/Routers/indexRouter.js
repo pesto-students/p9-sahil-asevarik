@@ -10,5 +10,8 @@ indexRouter.use('/user',equityRouter)
 indexRouter.use('/user',assetRouter)
 indexRouter.use('/user',fixedIncomeRouter)
 indexRouter.use('/user',invoiceRouter)
-
+//error route fro demonstrating the sentry error
+indexRouter.get('/error-route',(req,res)=>{
+    throw new Error('first sentry error');
+})
 module.exports=indexRouter
